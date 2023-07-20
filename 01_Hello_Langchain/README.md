@@ -6,7 +6,7 @@ tags:
   - langchain
 ---
 
-# WTF Langchain极简入门: 01. Hello Langchain (三行代码)
+# WTF Langchain极简入门: 01. Hello Langchain
 
 最近在学习Langchain框架，顺手写一个“WTF Langchain极简入门”，供小白们使用（编程大佬可以另找教程）。本教程默认以下前提：
 - 使用Python版本的[Langchain](https://github.com/hwchase17/langchain)
