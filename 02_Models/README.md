@@ -69,6 +69,8 @@ Langchain提供接口集成不同的模型。为了便于切换模型，Langchai
 ## 示例代码
 
 接下来我们来看看如何在Langchain中使用LLM和聊天模型。
+
+[Models.ipynb](./Models.ipynb)
 ### 与LLM的交互
 
 与LLM的交互，我们需要使用 `langchain.llms` 模块中的 `OpenAI` 类。

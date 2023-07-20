@@ -68,6 +68,8 @@ pip install langchain==0.0.235 openai
 
 ### 代码
 
+[Hello_Langchain.ipynb](./Hello_Langchain.ipynb)
+
 ```python
 from langchain.chat_models import ChatOpenAI
 from langchain.schema import HumanMessage
