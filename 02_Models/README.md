@@ -118,6 +118,8 @@ print(response)
 AI (Artificial Intelligence) is a branch of computer science that deals with creating intelligent machines that can think, reason, learn, and problem solve. AI systems are designed to mimic human behavior and can be used to automate tasks or provide insights into data. AI can be used in a variety of fields, such as healthcare, finance, robotics, and more.
 ```
 
+接下来我们使用 `SystemMessage` 指令来指定模型的行为。如下代码指定模型对AI一无所知，在回答AI相关问题时，回答“I don't know”。
+
 ```python
 response = chat.predict_messages([
   SystemMessage(content="You are a chatbot that knows nothing about AI. When you are asked about AI, you must say 'I don\'t know'"),
