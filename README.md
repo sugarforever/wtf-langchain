@@ -16,9 +16,9 @@
 
 **05: 输出解析器**：[链接](https://github.com/sugarforever/wtf-langchain/tree/main/05_Output_Parsers)
 
-**06: 记忆组件**：[链接](https://github.com/sugarforever/wtf-langchain/tree/main/06_Memory)
+**06: 链**：[链接](https://github.com/sugarforever/wtf-langchain/tree/main/06_Chains)
 
-**07: 链**：[链接](https://github.com/sugarforever/wtf-langchain/tree/main/07_Chains)
+**07: 记忆组件**：[链接](https://github.com/sugarforever/wtf-langchain/tree/main/07_Memory)
 
 **08: 代理**：[链接](https://github.com/sugarforever/wtf-langchain/tree/main/08_Agents)
 
