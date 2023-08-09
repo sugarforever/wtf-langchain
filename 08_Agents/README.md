@@ -271,7 +271,10 @@ Final Answer: The height difference between Eiffel Tower and Taiwan 101 Tower is
 
 
 ## 总结
-本节课程中，我们学习了什么是 `Agent` 代理，`Tool` 工具，以及 `AgentExecutor` 代理执行器，并学习了它们的基本用法。下一讲我们将学习 `Callback` 回调。 
+
+本节课程中，我们学习了什么是 `Agent` 代理，`Tool` 工具，以及 `AgentExecutor` 代理执行器，并学习了它们的基本用法。下一讲我们将学习 `Callback` 回调。
+
+本节课程的完整示例代码，请参考 [08_Agents.ipynb](./08_Agents.ipynb)。
 
 ### 相关文档资料链接：
 1. [Python Langchain官方文档](https://python.langchain.com/docs/get_started/introduction.html) 
