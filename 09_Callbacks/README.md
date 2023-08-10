@@ -139,7 +139,7 @@ Who is Super Mario?
 
 ## 自定义处理器
 
-我们可以通过继承 `BaseCallbackHandler` 来实现自定义的回调处理器。下面是一个简单的例子，`TimerHandler` 将跟踪 `Chain` 的起止时间，并统计每次交互的处理耗时。
+我们可以通过继承 `BaseCallbackHandler` 来实现自定义的回调处理器。下面是一个简单的例子，`TimerHandler` 将跟踪 `Chain` 或 `LLM` 交互的起止时间，并统计每次交互的处理耗时。
 
 ```python
 from langchain.callbacks.base import BaseCallbackHandler
