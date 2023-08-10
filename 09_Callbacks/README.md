@@ -235,7 +235,6 @@ The hex code of black is #000000.
 以 `OpenAI` 模型类为例：
 
 ```python
-from langchain import callbacks
 timerHandler = TimerHandler()
 llm = OpenAI()
 response = llm.predict("What is the HEX code of color BLACK?", callbacks=[timerHandler])
