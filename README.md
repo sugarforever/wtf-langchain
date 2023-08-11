@@ -9,19 +9,3 @@
 **01: Hello Langchain**：[链接](https://github.com/sugarforever/wtf-langchain/tree/main/01_Hello_Langchain)
 
 **02: 模型**：[链接](https://github.com/sugarforever/wtf-langchain/tree/main/02_Models)
-
-**03: 数据连接**：[链接](https://github.com/sugarforever/wtf-langchain/tree/main/03_Data_Connections)
-
-**04: 提示词**：[链接](https://github.com/sugarforever/wtf-langchain/tree/main/04_Prompts)
-
-**05: 输出解析器**：[链接](https://github.com/sugarforever/wtf-langchain/tree/main/05_Output_Parsers)
-
-**06: 链**：[链接](https://github.com/sugarforever/wtf-langchain/tree/main/06_Chains)
-
-**07: 记忆组件**：[链接](https://github.com/sugarforever/wtf-langchain/tree/main/07_Memory)
-
-**08: 代理**：[链接](https://github.com/sugarforever/wtf-langchain/tree/main/08_Agents)
-
-**09: 回调**：[链接](https://github.com/sugarforever/wtf-langchain/tree/main/09_Callbacks)
-
-**10: 一个完整的例子**：[链接](https://github.com/sugarforever/wtf-langchain/tree/main/10_Example)
