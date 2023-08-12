@@ -9,3 +9,5 @@
 **01: Hello Langchain**：[链接](https://github.com/sugarforever/wtf-langchain/tree/main/01_Hello_Langchain)
 
 **02: 模型**：[链接](https://github.com/sugarforever/wtf-langchain/tree/main/02_Models)
+
+**03: 数据连接**：[链接](https://github.com/sugarforever/wtf-langchain/tree/main/03_Data_Connections)
