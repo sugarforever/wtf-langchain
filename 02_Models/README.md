@@ -115,8 +115,22 @@ print(response)
 你应该能看到类似如下输出：
 
 ```shell
-AI (Artificial Intelligence) is a branch of computer science that deals with creating intelligent machines that can think, reason, learn, and problem solve. AI systems are designed to mimic human behavior and can be used to automate tasks or provide insights into data. AI can be used in a variety of fields, such as healthcare, finance, robotics, and more.
+content='AI, or Artificial Intelligence, refers to the simulation of human intelligence processes by machines, especially computer systems. These processes include learning, reasoning, problem-solving, perception, and language understanding. AI technology has the capability to drastically change and improve the way we work, live, and interact.' additional_kwargs={} example=False
 ```
+
+通过以下代码我们查看一下 `response` 变量的类型：
+
+```python
+response.__class
+```
+
+可以看到，它是一个 `AIMessage` 类型的对象。
+
+```shell
+langchain.schema.messages.AIMessage
+```
+
+```shell
 
 接下来我们使用 `SystemMessage` 指令来指定模型的行为。如下代码指定模型对AI一无所知，在回答AI相关问题时，回答“I don't know”。
 
