@@ -75,6 +75,8 @@ text_splitter = CharacterTextSplitter(
     chunk_overlap  = 200,
     length_function = len,
 )
+
+split_docs = text_splitter.split_documents(docs)
 ```
 
 #### 拆分代码
@@ -127,7 +129,7 @@ text_splitter = RecursiveCharacterTextSplitter(
     chunk_overlap  = 20,
     length_function = len,
 )
-texts = text_splitter.create_documents([docs])
+texts = text_splitter.split_documents(docs)
 ```
 #### 按token拆分
 
@@ -140,7 +142,7 @@ from langchain.text_splitter import CharacterTextSplitter
 text_splitter = CharacterTextSplitter.from_tiktoken_encoder(
     chunk_size=100, chunk_overlap=0
 )
-texts = text_splitter.split_text(text)
+split_docs = text_splitter.split_documents(docs)
 ```
 ### 向量化文档分块
 
@@ -201,15 +203,20 @@ export OPENAI_API_KEY="..."
 
 `Langchain` 提供了 `Chroma` 包装类，封装了chromadb的操作。
 
+在进行以下代码执行前，需要安装 `Chroma` 的包：
+
+```shell
+pip install -q chromadb
+```
+
 ```python
 from langchain.document_loaders import TextLoader
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores import Chroma
 
-raw_documents = TextLoader('some_text.txt').load()
 text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
-documents = text_splitter.split_documents(raw_documents)
+documents = text_splitter.split_documents(docs)
 db = Chroma.from_documents(documents, OpenAIEmbeddings())
 ```
 
@@ -218,7 +225,7 @@ db = Chroma.from_documents(documents, OpenAIEmbeddings())
 向量数据库提供的重要接口就是相似性查询。如上述内容提到，文本相似性的衡量，由文本的向量表示的欧几里得距离来衡量。向量数据库提供了该接口，用于查询与给定文本最相似的文本。
 
 ```python
-query = "大家对WTF Langchain评价如何？"
+query = "什么是WTF Langchain？"
 docs = db.similarity_search(query)
 print(docs[0].page_content)
 ```
