@@ -51,11 +51,13 @@ LLM应用往往需要用户特定的数据，而这些数据并不属于模型�
 ```python
 from langchain.document_loaders import TextLoader
 
-loader = TextLoader("./01_Hello_Langchain/README.md")
+loader = TextLoader("./README.md")
 docs = loader.load()
 ```
 
-在上述代码中，我们使用 `TextLoader` 加载了本地文件系统中的 `./01_Hello_Langchain/README.md` 文件。`TextLoader` 的 `load` 方法返回一个 `Document` 对象数组（`Document` 是 `Langchain` 提供的文档类，包含原始内容和元数据）。我们可以通过 `Document` 对象的 `content` 属性来访问文档的原始内容。
+在上述代码中，我们使用 `TextLoader` 加载了本地文件系统中的 `./README.md` 文件。`TextLoader` 的 `load` 方法返回一个 `Document` 对象数组（`Document` 是 `Langchain` 提供的文档类，包含原始内容和元数据）。我们可以通过 `Document` 对象的 `content` 属性来访问文档的原始内容。
+
+完整代码请参考[本节课程的示例代码](./03_Data_Connections.ipynb)。
 
 ### 拆分文档
 
