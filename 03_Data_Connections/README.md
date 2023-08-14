@@ -238,3 +238,4 @@ print(docs[0].page_content)
 
 ### 相关文档资料链接：
 1. [Python Langchain官方文档](https://python.langchain.com/docs/get_started/introduction.html) 
+2. [本节课程的示例代码](./03_Data_Connections.ipynb)
