@@ -6,8 +6,10 @@
 - Langchain目前还处于快速发展阶段，版本迭代频繁，为避免示例代码失效，本教程使用最新版本 **0.0.235**
 ## 极简入门
 
-**01: Hello Langchain**：[链接](https://github.com/sugarforever/wtf-langchain/tree/main/01_Hello_Langchain)
+**01: Hello Langchain**：[链接](./01_Hello_Langchain)
 
-**02: 模型**：[链接](https://github.com/sugarforever/wtf-langchain/tree/main/02_Models)
+**02: 模型**：[链接](./02_Models)
 
-**03: 数据连接**：[链接](https://github.com/sugarforever/wtf-langchain/tree/main/03_Data_Connections)
+**03: 数据连接**：[链接](./03_Data_Connections)
+
+**04: 提示词**：[链接](./04_Prompts)
