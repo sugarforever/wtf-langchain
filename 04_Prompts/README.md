@@ -70,7 +70,7 @@ multiple_input_prompt.format(color="black", animal="bear")
 
 例如，在OpenAI [Chat Completion API](https://platform.openai.com/docs/api-reference/chat/create)中，聊天消息可以与assistant、human或system角色相关联。
 
-为此，LangChain提供了一系列模板，以便更轻松地构建和处理提示词。建议在与聊天模型交互时优先选择使用这些与聊天相关的模板，而不是基础的PromptTemplate，以充分利用框架的优势，提高开发效率。`SystemMessagePromptTemplate`, `AIMessagePromptTemplate`, `HumanMessagePromptTemplate` 是分别用于创建不用角色提示词的模板。
+为此，LangChain提供了一系列模板，以便更轻松地构建和处理提示词。建议在与聊天模型交互时优先选择使用这些与聊天相关的模板，而不是基础的PromptTemplate，以充分利用框架的优势，提高开发效率。`SystemMessagePromptTemplate`, `AIMessagePromptTemplate`, `HumanMessagePromptTemplate` 是分别用于创建不同角色提示词的模板。
 
 我们来看一个综合示例：
 
@@ -98,7 +98,7 @@ chat_prompt = ChatPromptTemplate.from_messages([system_message_prompt, human_mes
 chat_prompt.format_prompt(
     src_lang="English",
     dst_lang="Chinese", 
-    text="Did you eat in this morning?"
+    user_input="Did you eat in this morning?"
 ).to_messages()
 ```
 
@@ -142,8 +142,7 @@ example_selector = LengthBasedExampleSelector(
     # 提示词模版
     example_prompt=example_prompt, 
     # 格式化的样本数据的最大长度，通过get_text_length函数来衡量
-    max_length=25,
-    # get_text_length: ...
+    max_length=25
 )
 dynamic_prompt = FewShotPromptTemplate(
     example_selector=example_selector,
@@ -183,6 +182,11 @@ Output:
 注，选择器实例化时，我们没有改变 `get_text_length` 函数实现，其默认实现为：
 
 ```python
+    def _get_length_based(text: str) -> int:
+        return len(re.split("\n| ", text))
+
+    ......
+
     get_text_length: Callable[[str], int] = _get_length_based
     """Function to measure prompt length. Defaults to word count."""
 ```
