@@ -28,7 +28,7 @@ tags:
 我们利用 `LangChain` 的QA chain，结合 `Chroma` 来实现PDF文档的语义化搜索。示例代码所引用的是[AWS Serverless
 Developer Guide](https://docs.aws.amazon.com/pdfs/serverless/latest/devguide/serverless-core.pdf)，该PDF文档共84页。
 
-本讲的完整代码请参考[10_Example.jpynb]()
+本讲的完整代码请参考[10_Example.jpynb](./10_Example.ipynb)
 
 1. 安装必要的 `Python` 包
 
