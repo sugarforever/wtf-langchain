@@ -63,7 +63,7 @@ tags:
 ### 安装指令
 
 ```shell
-pip install langchain==0.0.235 openai==0.28.1
+pip install langchain==0.0.235 openai==0.28.2
 ```
 
 ### 代码
