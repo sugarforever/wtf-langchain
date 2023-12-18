@@ -86,6 +86,7 @@ split_docs = text_splitter.split_documents(docs)
 `RecursiveCharacterTextSplitter` 的 `from_language` 函数，可以根据编程语言的特性，将代码拆分为合适的文本块。代码如下：
 
 ```pyhon
+from langchain.text_splitter import Language,RecursiveCharacterTextSplitter
 PYTHON_CODE = """
 def hello_langchain():
     print("Hello, Langchain!")
