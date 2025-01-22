@@ -83,7 +83,10 @@ from langchain.llms import OpenAI
 import os
 os.environ['OPENAI_API_KEY'] = '您的有效OpenAI API Key'
 
-llm = OpenAI(model_name="text-davinci-003")
+# 根据最新信息，OpenAI 的 text-davinci-003 模型已被弃用， ￼
+# 建议在使用 LangChain 时，切换到更新后的文本补全模型: gpt-3.5-turbo-instruct。
+# 详见: https://platform.openai.com/docs/deprecations
+llm = OpenAI(model_name="gpt-3.5-turbo-instruct")
 response = llm.predict("What is AI?")
 print(response)
 ```
